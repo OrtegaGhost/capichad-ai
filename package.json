@@ -40,7 +40,8 @@
       "package.json",
       "NOTICE",
       "AUTHORS",
-      "LICENSE"
+      "LICENSE",
+      "!node_modules/canvas/**"
     ],
     "extraResources": [
       {
@@ -71,7 +72,8 @@
       "capibara": {
         "origin": "https://github.com/OrtegaGhost/capichad-ai"
       }
-    }
+    },
+    "npmRebuild": false
   },
   "devDependencies": {
     "electron": "^33.4.11",
