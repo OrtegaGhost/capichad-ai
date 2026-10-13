@@ -2,7 +2,7 @@
 // Aviso de autoria: conserva este encabezado y el archivo NOTICE en copias y derivados.
 ﻿const assert = require('assert'); const fs = require('fs'); const path = require('path'); const os = require('os');
 const P = require('../prog.js');
-const PY = process.env.LOCALAPPDATA + '\\Programs\\CapiChad\\resources\\tools\\python\\python.exe';
+const PY = process.env.CAPICHAD_TEST_PY || require('path').join(__dirname, '..', 'tools', 'python', 'python.exe');
 let n = 0; const ok = (c, m) => { n++; assert(c, m); };
 
 // 1. parseResponse

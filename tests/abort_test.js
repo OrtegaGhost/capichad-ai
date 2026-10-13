@@ -1,7 +1,7 @@
 // CapiChad - (c) 2026 Capibara Software (OrtegaGhost) - AGPL-3.0-or-later - https://github.com/OrtegaGhost/capichad-ai
 // Aviso de autoria: conserva este encabezado y el archivo NOTICE en copias y derivados.
 ﻿const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert'); const P=require('../prog.js');
-const PY=process.env.LOCALAPPDATA+'\\Programs\\CapiChad\\resources\\tools\\python\\python.exe';
+const PY = process.env.CAPICHAD_TEST_PY || require('path').join(__dirname, '..', 'tools', 'python', 'python.exe');
 (async()=>{
   // 1) abortar mientras el modelo "escribe"
   let d=fs.mkdtempSync(path.join(os.tmpdir(),'ab-')); let ac=new AbortController();

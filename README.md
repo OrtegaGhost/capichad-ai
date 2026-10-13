@@ -83,6 +83,13 @@ con *Internet: No*. Sin telemetría ni cuentas.
 - [Instalación paso a paso](docs/INSTALACION.md) · [Limitaciones y cifras](docs/LIMITES.md)
 - [Desarrollo, arquitectura y pruebas](docs/DESARROLLO.md) · [Cómo contribuir](CONTRIBUTING.md)
 - [Licencia (AGPL-3.0)](LICENSE) · [Autoría](NOTICE) · [Avisos de terceros](THIRD-PARTY-NOTICES.md)
+- [Privacidad](docs/PRIVACIDAD.md) · [Code signing policy](CODE_SIGNING_POLICY.md) · [Firma digital](docs/FIRMA-DIGITAL.md)
+
+## Code signing policy
+El instalador oficial se compila automáticamente en GitHub Actions desde una etiqueta de versión y está pensado para
+firmarse con el programa gratuito de [SignPath Foundation](https://signpath.org) para proyectos de código abierto.
+Mientras la solicitud está en trámite, los instaladores publicados **no están firmados**. Detalles, roles y cómo
+verificar una descarga: **[CODE_SIGNING_POLICY.md](CODE_SIGNING_POLICY.md)** · **[Privacidad](docs/PRIVACIDAD.md)**.
 
 ## Apoya el proyecto
 CapiChad es gratuito y se desarrolla en tiempo libre. Si te es útil y quieres ayudar a que siga creciendo (más pruebas,

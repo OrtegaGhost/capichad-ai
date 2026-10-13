@@ -147,6 +147,11 @@ VIEWS.setup = async (main, step = 1) => {
       h('button', { class: 'btn', title: 'Si tienes OllamaSetup.exe (paquete offline o memoria USB)', onclick: async () => { toast('Instalando el motor de IA…'); try { const r = await invoke('ollama:installFrom'); if (r.cancelled) return; toast(r.installed ? 'Motor de IA instalado' : 'No se pudo instalar el motor', !r.installed); go('setup', 1); } catch (e) { toast(e.message, true, 8000); } } }, 'Instalar desde archivo…'),
       h('button', { class: 'btn', onclick: () => go('setup', 1) }, 'Ya lo instalé')));
     else box.append(h('div', { class: 'banner' }, h('span', { class: 'ic', style: 'color:var(--ok)', html: icon('check') }), h('div', { class: 't' }, h('b', {}, 'Motor de IA encontrado'), h('div', { class: 'muted' }, st.running ? 'Está en marcha.' : 'Se iniciará automáticamente.'))));
+    // privacidad: el modo internet envía el texto de las búsquedas a terceros; se decide aquí, de forma visible
+    const webCb = h('input', { type: 'checkbox', checked: S.cfg.webMode !== 'never', onchange: async e => { S.cfg = await invoke('cfg:set', { webMode: e.target.checked ? 'auto' : 'never' }); toast(e.target.checked ? 'Modo internet activado.' : 'Modo internet desactivado: todo queda en tu equipo.'); } });
+    box.append(h('label', { class: 'card', style: 'display:flex;gap:12px;align-items:flex-start;margin-top:14px;cursor:pointer' }, webCb,
+      h('div', {}, h('b', {}, 'Permitir que CapiChad consulte internet para mejorar respuestas y código'),
+        h('div', { class: 'muted' }, 'Es opcional. Si lo activas, el texto de la búsqueda se envía a DuckDuckGo, Stack Exchange y Openverse (ven tu dirección IP). Puedes cambiarlo cuando quieras con el botón «Internet» del chat. Sin esto, todo funciona en tu equipo.'))));
     box.append(h('div', { style: 'display:flex;justify-content:flex-end;margin-top:18px' }, h('button', { class: 'btn pri', disabled: !st.installed, onclick: () => go('setup', 2) }, 'Continuar')));
   } else if (step === 2) {
     const planBox = h('div', {}); box.append(planBox);

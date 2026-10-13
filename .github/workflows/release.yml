@@ -1,0 +1,116 @@
+# CapiChad - (c) 2026 Capibara Software (OrtegaGhost) - AGPL-3.0-or-later
+# Compila el instalador desde cero en un runner de GitHub, ejecuta las pruebas y, si esta configurado SignPath,
+# lo envia a firmar. Con una etiqueta v* publica la Release con el instalador y su SHA-256.
+#
+# Para activar la firma (SignPath Foundation): crea en GitHub  Settings > Secrets and variables > Actions
+#   secreto  SIGNPATH_API_TOKEN
+#   variables  SIGNPATH_ORGANIZATION_ID, SIGNPATH_PROJECT_SLUG, SIGNPATH_POLICY_SLUG
+# Sin esas variables el flujo funciona igual y publica el instalador SIN firmar.
+name: Compilar y publicar instalador
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: instalador-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  instalador:
+    runs-on: windows-latest        # runner alojado por GitHub (requisito de SignPath para proyectos de codigo abierto)
+    timeout-minutes: 60
+    permissions:
+      contents: write              # crear la Release
+      actions: read                # SignPath lee los detalles de la ejecucion
+    steps:
+      - name: Obtener el codigo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1  # v7.1.0
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Preparar herramientas (Python embebido, Tesseract y modelo, con SHA-256 fijados)
+        shell: pwsh
+        run: ./tools/preparar_dependencias.ps1
+
+      - name: Instalar dependencias de la app
+        run: npm ci
+
+      - name: Pruebas
+        shell: pwsh
+        run: |
+          $env:CAPICHAD_TEST_PY = (Resolve-Path ./tools/python/python.exe).Path
+          foreach ($t in Get-ChildItem tests/*.js) {
+            Write-Host "== $($t.Name)"
+            node $t.FullName
+            if ($LASTEXITCODE) { throw "Fallo $($t.Name)" }
+          }
+
+      - name: Compilar el instalador
+        run: npx electron-builder --win nsis --publish never
+
+      - name: SHA-256 del instalador sin firmar
+        id: hash
+        shell: pwsh
+        run: |
+          $f = Get-ChildItem dist/CapiChad-Setup-*.exe | Select-Object -First 1
+          $h = (Get-FileHash $f.FullName -Algorithm SHA256).Hash
+          "archivo=$($f.Name)" >> $env:GITHUB_OUTPUT
+          "sha=$h" >> $env:GITHUB_OUTPUT
+          Write-Host "$($f.Name)  $h"
+
+      - name: Subir instalador sin firmar
+        id: subir
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9  # v7.0.2
+        with:
+          name: instalador-sin-firmar
+          path: dist/CapiChad-Setup-*.exe
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Firmar con SignPath (solo si esta configurado)
+        id: firma
+        if: ${{ vars.SIGNPATH_ORGANIZATION_ID != '' }}
+        uses: signpath/github-action-submit-signing-request@f6d04783b4569d051e0c80105fe66e82819d0092  # v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_POLICY_SLUG }}
+          github-artifact-id: ${{ steps.subir.outputs.artifact-id }}
+          wait-for-completion: true
+          output-artifact-directory: firmado
+
+      - name: Publicar la Release (solo con etiqueta v*)
+        if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FIRMADO: ${{ steps.firma.outcome == 'success' }}
+        run: |
+          $firmado = ($env:FIRMADO -eq 'true')
+          $src = if ($firmado) { Get-ChildItem firmado/CapiChad-Setup-*.exe | Select-Object -First 1 } else { Get-ChildItem dist/CapiChad-Setup-*.exe | Select-Object -First 1 }
+          $sha = (Get-FileHash $src.FullName -Algorithm SHA256).Hash
+          $estado = if ($firmado) { "Firmado digitalmente (certificado de SignPath Foundation)." } else { "SIN firma digital: Windows SmartScreen mostrara una advertencia (Mas informacion > Ejecutar de todas formas)." }
+          $notas = @"
+          ## CapiChad $env:GITHUB_REF_NAME
+
+          Instalador para Windows 10/11 de 64 bits. Instrucciones: [docs/INSTALACION.md](https://github.com/$env:GITHUB_REPOSITORY/blob/main/docs/INSTALACION.md).
+
+          **$estado**
+
+          SHA-256: ``$sha``
+          Compilado automaticamente desde esta etiqueta en GitHub Actions (receta reproducible: ``tools/preparar_dependencias.ps1``).
+
+          [Code signing policy](https://github.com/$env:GITHUB_REPOSITORY/blob/main/CODE_SIGNING_POLICY.md) · [Privacidad](https://github.com/$env:GITHUB_REPOSITORY/blob/main/docs/PRIVACIDAD.md) · Licencia AGPL-3.0-or-later
+          "@
+          Set-Content -Path notas.md -Value $notas -Encoding utf8
+          gh release create $env:GITHUB_REF_NAME $src.FullName --title "CapiChad $env:GITHUB_REF_NAME" --notes-file notas.md --verify-tag

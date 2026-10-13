@@ -1,0 +1,10 @@
+# Paquetes del Python embebido de CapiChad (versiones fijadas para que la compilacion sea reproducible).
+# Los instala tools/preparar_dependencias.ps1. Para actualizar: cambia la version, compila y ejecuta las pruebas.
+pymupdf==1.28.2        # AGPL-3.0 (ver THIRD-PARTY-NOTICES.md)
+libzim==3.13.1         # GPL-3.0-or-later
+onnxruntime==1.31.0
+numpy==2.5.4
+pillow==12.3.0
+flatbuffers==25.12.19
+protobuf==7.36.2
+packaging==26.3
