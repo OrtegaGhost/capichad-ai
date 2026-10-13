@@ -30,7 +30,7 @@ variables del repositorio. Pasos (una sola vez):
 3. **En GitHub** (*Settings → Secrets and variables → Actions*):
    - Secreto `SIGNPATH_API_TOKEN` (token de un usuario con permiso de *submitter*).
    - Variables `SIGNPATH_ORGANIZATION_ID`, `SIGNPATH_PROJECT_SLUG`, `SIGNPATH_POLICY_SLUG`.
-4. **Publicar** una versión: `git tag v1.7.1 && git push origin v1.7.1`. El flujo compila, SignPath verifica el origen,
+4. **Publicar** una versión: `git tag v<versión> && git push origin v<versión>`. El flujo compila, SignPath verifica el origen,
    tú apruebas la petición en su panel y la Release sale firmada.
 5. **Atribución**: tras la aprobación, mostrar en el README y en las notas de la versión:
    *"Free code signing provided by SignPath.io, certificate by SignPath Foundation"* y actualizar el estado de

@@ -28,9 +28,10 @@ const byName = n => S.assistants.find(a => a.name === n);
 // ---------- barra lateral ----------
 function renderSide() {
   const cur = NAV_OF[S.view] || S.view; const side = $('#side'); side.innerHTML = '';
-  side.append(h('button', { class: 'btn pri', id: 'newchat', onclick: () => newChat() }, h('span', { html: icon('plus') }), 'Nuevo chat'));
-  NAV.forEach(([k, label, ic]) => side.append(h('div', { class: 'nav' + (cur === k ? ' on' : ''), onclick: () => go(k) }, h('span', { html: icon(ic) }), label)));
-  side.append(h('div', { class: 'side-sec' }, 'Mis chats'));
+  const top = h('div', { class: 'side-scroll' }); side.append(top);   // lo que se desplaza; el estado y el pie quedan siempre a la vista
+  top.append(h('button', { class: 'btn pri', id: 'newchat', onclick: () => newChat() }, h('span', { html: icon('plus') }), 'Nuevo chat'));
+  NAV.forEach(([k, label, ic]) => top.append(h('div', { class: 'nav' + (cur === k ? ' on' : ''), onclick: () => go(k) }, h('span', { html: icon(ic) }), label)));
+  top.append(h('div', { class: 'side-sec' }, 'Mis chats'));
   const rec = h('div', { id: 'recents' });
   const drawRecents = () => {
     rec.innerHTML = ''; const q = (S.chatQ || '').trim().toLowerCase();
@@ -53,7 +54,7 @@ function renderSide() {
   const sbox = h('div', { class: 'side-search' }, h('span', { html: icon('search') }),
     h('input', { type: 'search', placeholder: 'Buscar chats…', value: S.chatQ || '', oninput: e => { S.chatQ = e.target.value; drawRecents(); } }));
   drawRecents();
-  side.append(sbox, rec);
+  top.append(sbox, rec);
   side.append(h('div', { class: 'status' },
     h('div', {}, h('i', { class: 'dot ' + (S.engine ? 'ok' : 'bad') }), S.engine ? 'Motor activo' : (S.installed ? 'Motor detenido' : 'Motor no instalado')),
     h('div', {}, h('span', { html: icon(S.online ? 'wifi' : 'wifioff') }), S.online ? 'Con internet' : 'Sin internet'),

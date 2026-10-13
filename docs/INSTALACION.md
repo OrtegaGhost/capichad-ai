@@ -239,7 +239,7 @@ Solo si quieres modificar CapiChad. Necesitas [Node.js LTS](https://nodejs.org/e
 
 ```powershell
 git clone https://github.com/OrtegaGhost/capichad-ai.git
-cd capichad
+cd capichad-ai
 npm install
 ```
 El instalador empaqueta una carpeta `tools\` con componentes pesados que **no están en git** y debes preparar antes de
