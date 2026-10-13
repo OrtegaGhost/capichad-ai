@@ -1,0 +1,23 @@
+CapiChad
+Copyright (C) 2026 Capibara Software (OrtegaGhost)
+https://github.com/OrtegaGhost/capichad-ai
+
+CapiChad es software libre: puedes usarlo, estudiarlo, modificarlo y redistribuirlo bajo los
+términos de la GNU Affero General Public License, versión 3 o posterior (ver LICENSE).
+
+TÉRMINOS ADICIONALES (GNU AGPL-3.0, sección 7)
+
+  a) Conservación de avisos y autoría (sección 7(b)): toda copia o derivado, en código fuente o
+     en forma ejecutable, debe conservar este archivo NOTICE, el archivo AUTHORS, los encabezados de
+     copyright de cada archivo fuente y la pantalla «Acerca de» con la autoría original.
+
+  b) Marcas (sección 7(e)): no se concede ningún derecho sobre los nombres «CapiChad» y «Capibara
+     Software» ni sobre los logotipos de la carpeta assets/. Un derivado debe llevar otro nombre y no
+     debe sugerir que el autor original lo respalda.
+
+  c) Código fuente (AGPL-3.0, sección 13): si ofreces una versión modificada como servicio por red,
+     debes ofrecer a sus usuarios el código fuente correspondiente.
+
+Los componentes de terceros conservan sus propias licencias (ver THIRD-PARTY-NOTICES.md).
+Este proyecto se publicó por primera vez en https://github.com/OrtegaGhost/capichad-ai; el historial de commits y las
+versiones publicadas son evidencia de la autoría y de las fechas de creación.

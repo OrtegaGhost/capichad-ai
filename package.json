@@ -1,0 +1,89 @@
+{
+  "name": "capichad",
+  "productName": "CapiChad",
+  "version": "1.7.0",
+  "description": "IA local sin internet - Capibara Software",
+  "author": {
+    "name": "Capibara Software (OrtegaGhost)",
+    "url": "https://github.com/OrtegaGhost/capichad-ai"
+  },
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/OrtegaGhost/capichad-ai#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OrtegaGhost/capichad-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OrtegaGhost/capichad-ai/issues"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "mx.capibara.capichad",
+    "productName": "CapiChad",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "prog.js",
+      "plan.js",
+      "installer.js",
+      "downloader.js",
+      "catalog/**/*",
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "NOTICE",
+      "AUTHORS",
+      "LICENSE"
+    ],
+    "extraResources": [
+      {
+        "from": "tools",
+        "to": "tools"
+      }
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "CapiChad",
+      "artifactName": "CapiChad-Setup-${version}.exe",
+      "deleteAppDataOnUninstall": false,
+      "language": "3082",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico",
+      "license": "LICENSE"
+    },
+    "copyright": "(c) 2026 Capibara Software (OrtegaGhost). AGPL-3.0-or-later.",
+    "extraMetadata": {
+      "capibara": {
+        "origin": "https://github.com/OrtegaGhost/capichad-ai"
+      }
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "mammoth": "^1.8.0",
+    "pdfjs-dist": "^3.11.174"
+  },
+  "copyright": "(c) 2026 Capibara Software (OrtegaGhost). AGPL-3.0-or-later.",
+  "capibara": {
+    "origin": "https://github.com/OrtegaGhost/capichad-ai",
+    "fp": "UTsTwj8kbbPNf6YcDzNf1ozvU2oZfHrrErb7G7EZt5o="
+  }
+}

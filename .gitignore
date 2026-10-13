@@ -1,0 +1,14 @@
+﻿node_modules/
+dist/
+_respaldo_v1.0.0/
+# binarios pesados reconstruibles (Python embebido, Tesseract, modelo u2net)
+tools/python/
+tools/tesseract/
+tools/modelos/
+*.onnx
+*.exe
+*.log
+__pycache__/
+
+ESTADO-CAPICHAD.md
+.capichad/

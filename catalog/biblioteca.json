@@ -1,0 +1,1705 @@
+{
+ "version": 1,
+ "generated": "2026-10-13",
+ "mirrors": [
+  "https://download.kiwix.org/zim/",
+  "https://mirror.download.kiwix.org/zim/"
+ ],
+ "note": "Cada prefijo se resuelve, al descargar, al archivo más reciente de su carpeta (los nombres llevan fecha).⁠​‌​​​​‌‌​‌​‌​​​​​‌​​​​‌​​​‌​‌‌​‌​​‌‌​‌​‌​​‌‌​​​‌​​‌‌​​‌‌​‌‌​​​‌​​​‌‌​​​‌​​‌‌​​‌‌​‌‌​​​‌‌​​‌‌​​‌​⁠",
+ "packs": [
+  {
+   "id": "dev_core",
+   "title": "Programación esencial",
+   "desc": "Documentación oficial de decenas de lenguajes y herramientas (DevDocs), Python, PHP, PEPs y freeCodeCamp.",
+   "tag": "dev",
+   "approxBytes": 4663170421,
+   "items": [
+    {
+     "prefix": "devdocs_en_angular",
+     "folder": "devdocs",
+     "approxBytes": 2138003
+    },
+    {
+     "prefix": "devdocs_en_angularjs",
+     "folder": "devdocs",
+     "approxBytes": 1098377
+    },
+    {
+     "prefix": "devdocs_en_ansible",
+     "folder": "devdocs",
+     "approxBytes": 28163289
+    },
+    {
+     "prefix": "devdocs_en_apache-http-server",
+     "folder": "devdocs",
+     "approxBytes": 1349431
+    },
+    {
+     "prefix": "devdocs_en_apache-pig",
+     "folder": "devdocs",
+     "approxBytes": 516933
+    },
+    {
+     "prefix": "devdocs_en_astro",
+     "folder": "devdocs",
+     "approxBytes": 2344346
+    },
+    {
+     "prefix": "devdocs_en_async",
+     "folder": "devdocs",
+     "approxBytes": 346749
+    },
+    {
+     "prefix": "devdocs_en_axios",
+     "folder": "devdocs",
+     "approxBytes": 346994
+    },
+    {
+     "prefix": "devdocs_en_babel",
+     "folder": "devdocs",
+     "approxBytes": 578506
+    },
+    {
+     "prefix": "devdocs_en_backbone",
+     "folder": "devdocs",
+     "approxBytes": 357683
+    },
+    {
+     "prefix": "devdocs_en_bash",
+     "folder": "devdocs",
+     "approxBytes": 572117
+    },
+    {
+     "prefix": "devdocs_en_bazel",
+     "folder": "devdocs",
+     "approxBytes": 442578
+    },
+    {
+     "prefix": "devdocs_en_bluebird",
+     "folder": "devdocs",
+     "approxBytes": 506408
+    },
+    {
+     "prefix": "devdocs_en_bootstrap",
+     "folder": "devdocs",
+     "approxBytes": 724388
+    },
+    {
+     "prefix": "devdocs_en_bottle",
+     "folder": "devdocs",
+     "approxBytes": 421443
+    },
+    {
+     "prefix": "devdocs_en_bower",
+     "folder": "devdocs",
+     "approxBytes": 336802
+    },
+    {
+     "prefix": "devdocs_en_browser-support-tables",
+     "folder": "devdocs",
+     "approxBytes": 1434615
+    },
+    {
+     "prefix": "devdocs_en_bun",
+     "folder": "devdocs",
+     "approxBytes": 1143123
+    },
+    {
+     "prefix": "devdocs_en_c",
+     "folder": "devdocs",
+     "approxBytes": 1356873
+    },
+    {
+     "prefix": "devdocs_en_cakephp",
+     "folder": "devdocs",
+     "approxBytes": 2118949
+    },
+    {
+     "prefix": "devdocs_en_chai",
+     "folder": "devdocs",
+     "approxBytes": 369430
+    },
+    {
+     "prefix": "devdocs_en_chef",
+     "folder": "devdocs",
+     "approxBytes": 13484772
+    },
+    {
+     "prefix": "devdocs_en_click",
+     "folder": "devdocs",
+     "approxBytes": 453137
+    },
+    {
+     "prefix": "devdocs_en_clojure",
+     "folder": "devdocs",
+     "approxBytes": 435783
+    },
+    {
+     "prefix": "devdocs_en_cmake",
+     "folder": "devdocs",
+     "approxBytes": 2570785
+    },
+    {
+     "prefix": "devdocs_en_codeception",
+     "folder": "devdocs",
+     "approxBytes": 849655
+    },
+    {
+     "prefix": "devdocs_en_codeceptjs",
+     "folder": "devdocs",
+     "approxBytes": 821726
+    },
+    {
+     "prefix": "devdocs_en_codeigniter",
+     "folder": "devdocs",
+     "approxBytes": 891848
+    },
+    {
+     "prefix": "devdocs_en_coffeescript",
+     "folder": "devdocs",
+     "approxBytes": 371179
+    },
+    {
+     "prefix": "devdocs_en_composer",
+     "folder": "devdocs",
+     "approxBytes": 437392
+    },
+    {
+     "prefix": "devdocs_en_cordova",
+     "folder": "devdocs",
+     "approxBytes": 1435269
+    },
+    {
+     "prefix": "devdocs_en_couchdb",
+     "folder": "devdocs",
+     "approxBytes": 710503
+    },
+    {
+     "prefix": "devdocs_en_cpp",
+     "folder": "devdocs",
+     "approxBytes": 8048596
+    },
+    {
+     "prefix": "devdocs_en_crystal",
+     "folder": "devdocs",
+     "approxBytes": 2385496
+    },
+    {
+     "prefix": "devdocs_en_css",
+     "folder": "devdocs",
+     "approxBytes": 2732639
+    },
+    {
+     "prefix": "devdocs_en_cypress",
+     "folder": "devdocs",
+     "approxBytes": 4061179
+    },
+    {
+     "prefix": "devdocs_en_d",
+     "folder": "devdocs",
+     "approxBytes": 1807957
+    },
+    {
+     "prefix": "devdocs_en_d3",
+     "folder": "devdocs",
+     "approxBytes": 10844338
+    },
+    {
+     "prefix": "devdocs_en_dart",
+     "folder": "devdocs",
+     "approxBytes": 10043433
+    },
+    {
+     "prefix": "devdocs_en_date-fns",
+     "folder": "devdocs",
+     "approxBytes": 498871
+    },
+    {
+     "prefix": "devdocs_en_deno",
+     "folder": "devdocs",
+     "approxBytes": 2726445
+    },
+    {
+     "prefix": "devdocs_en_django",
+     "folder": "devdocs",
+     "approxBytes": 2163949
+    },
+    {
+     "prefix": "devdocs_en_django-rest-framework",
+     "folder": "devdocs",
+     "approxBytes": 599070
+    },
+    {
+     "prefix": "devdocs_en_docker",
+     "folder": "devdocs",
+     "approxBytes": 1782594
+    },
+    {
+     "prefix": "devdocs_en_dojo",
+     "folder": "devdocs",
+     "approxBytes": 733380
+    },
+    {
+     "prefix": "devdocs_en_dom",
+     "folder": "devdocs",
+     "approxBytes": 14163849
+    },
+    {
+     "prefix": "devdocs_en_drupal",
+     "folder": "devdocs",
+     "approxBytes": 12800943
+    },
+    {
+     "prefix": "devdocs_en_duckdb",
+     "folder": "devdocs",
+     "approxBytes": 1961958
+    },
+    {
+     "prefix": "devdocs_en_eigen3",
+     "folder": "devdocs",
+     "approxBytes": 2781011
+    },
+    {
+     "prefix": "devdocs_en_electron",
+     "folder": "devdocs",
+     "approxBytes": 1673061
+    },
+    {
+     "prefix": "devdocs_en_elisp",
+     "folder": "devdocs",
+     "approxBytes": 2310054
+    },
+    {
+     "prefix": "devdocs_en_elixir",
+     "folder": "devdocs",
+     "approxBytes": 1295048
+    },
+    {
+     "prefix": "devdocs_en_ember",
+     "folder": "devdocs",
+     "approxBytes": 1221412
+    },
+    {
+     "prefix": "devdocs_en_enzyme",
+     "folder": "devdocs",
+     "approxBytes": 423402
+    },
+    {
+     "prefix": "devdocs_en_erlang",
+     "folder": "devdocs",
+     "approxBytes": 4125021
+    },
+    {
+     "prefix": "devdocs_en_es-toolkit",
+     "folder": "devdocs",
+     "approxBytes": 886303
+    },
+    {
+     "prefix": "devdocs_en_esbuild",
+     "folder": "devdocs",
+     "approxBytes": 458276
+    },
+    {
+     "prefix": "devdocs_en_eslint",
+     "folder": "devdocs",
+     "approxBytes": 1032162
+    },
+    {
+     "prefix": "devdocs_en_express",
+     "folder": "devdocs",
+     "approxBytes": 443479
+    },
+    {
+     "prefix": "devdocs_en_falcon",
+     "folder": "devdocs",
+     "approxBytes": 457565
+    },
+    {
+     "prefix": "devdocs_en_fastapi",
+     "folder": "devdocs",
+     "approxBytes": 2548714
+    },
+    {
+     "prefix": "devdocs_en_fish",
+     "folder": "devdocs",
+     "approxBytes": 594968
+    },
+    {
+     "prefix": "devdocs_en_flask",
+     "folder": "devdocs",
+     "approxBytes": 617313
+    },
+    {
+     "prefix": "devdocs_en_flow",
+     "folder": "devdocs",
+     "approxBytes": 595307
+    },
+    {
+     "prefix": "devdocs_en_fluture",
+     "folder": "devdocs",
+     "approxBytes": 340226
+    },
+    {
+     "prefix": "devdocs_en_gcc",
+     "folder": "devdocs",
+     "approxBytes": 1660569
+    },
+    {
+     "prefix": "devdocs_en_git",
+     "folder": "devdocs",
+     "approxBytes": 1588644
+    },
+    {
+     "prefix": "devdocs_en_gnu-cobol",
+     "folder": "devdocs",
+     "approxBytes": 613692
+    },
+    {
+     "prefix": "devdocs_en_gnu-fortran",
+     "folder": "devdocs",
+     "approxBytes": 789653
+    },
+    {
+     "prefix": "devdocs_en_gnu-make",
+     "folder": "devdocs",
+     "approxBytes": 613654
+    },
+    {
+     "prefix": "devdocs_en_gnuplot",
+     "folder": "devdocs",
+     "approxBytes": 655801
+    },
+    {
+     "prefix": "devdocs_en_go",
+     "folder": "devdocs",
+     "approxBytes": 1696105
+    },
+    {
+     "prefix": "devdocs_en_godot",
+     "folder": "devdocs",
+     "approxBytes": 1960647
+    },
+    {
+     "prefix": "devdocs_en_graphite",
+     "folder": "devdocs",
+     "approxBytes": 486763
+    },
+    {
+     "prefix": "devdocs_en_graphviz",
+     "folder": "devdocs",
+     "approxBytes": 917511
+    },
+    {
+     "prefix": "devdocs_en_groovy",
+     "folder": "devdocs",
+     "approxBytes": 3318941
+    },
+    {
+     "prefix": "devdocs_en_grunt",
+     "folder": "devdocs",
+     "approxBytes": 382149
+    },
+    {
+     "prefix": "devdocs_en_gtk",
+     "folder": "devdocs",
+     "approxBytes": 2187744
+    },
+    {
+     "prefix": "devdocs_en_hammerspoon",
+     "folder": "devdocs",
+     "approxBytes": 894266
+    },
+    {
+     "prefix": "devdocs_en_handlebars",
+     "folder": "devdocs",
+     "approxBytes": 353448
+    },
+    {
+     "prefix": "devdocs_en_hapi",
+     "folder": "devdocs",
+     "approxBytes": 381775
+    },
+    {
+     "prefix": "devdocs_en_haproxy",
+     "folder": "devdocs",
+     "approxBytes": 887143
+    },
+    {
+     "prefix": "devdocs_en_haskell",
+     "folder": "devdocs",
+     "approxBytes": 4106027
+    },
+    {
+     "prefix": "devdocs_en_haxe",
+     "folder": "devdocs",
+     "approxBytes": 682682
+    },
+    {
+     "prefix": "devdocs_en_homebrew",
+     "folder": "devdocs",
+     "approxBytes": 4015423
+    },
+    {
+     "prefix": "devdocs_en_html",
+     "folder": "devdocs",
+     "approxBytes": 1721660
+    },
+    {
+     "prefix": "devdocs_en_htmx",
+     "folder": "devdocs",
+     "approxBytes": 574166
+    },
+    {
+     "prefix": "devdocs_en_http",
+     "folder": "devdocs",
+     "approxBytes": 1949240
+    },
+    {
+     "prefix": "devdocs_en_i3",
+     "folder": "devdocs",
+     "approxBytes": 454271
+    },
+    {
+     "prefix": "devdocs_en_immutable",
+     "folder": "devdocs",
+     "approxBytes": 393537
+    },
+    {
+     "prefix": "devdocs_en_influxdata",
+     "folder": "devdocs",
+     "approxBytes": 1873255
+    },
+    {
+     "prefix": "devdocs_en_jasmine",
+     "folder": "devdocs",
+     "approxBytes": 352430
+    },
+    {
+     "prefix": "devdocs_en_javascript",
+     "folder": "devdocs",
+     "approxBytes": 2641021
+    },
+    {
+     "prefix": "devdocs_en_jekyll",
+     "folder": "devdocs",
+     "approxBytes": 473274
+    },
+    {
+     "prefix": "devdocs_en_jest",
+     "folder": "devdocs",
+     "approxBytes": 575132
+    },
+    {
+     "prefix": "devdocs_en_jinja",
+     "folder": "devdocs",
+     "approxBytes": 447315
+    },
+    {
+     "prefix": "devdocs_en_joi",
+     "folder": "devdocs",
+     "approxBytes": 375216
+    },
+    {
+     "prefix": "devdocs_en_jq",
+     "folder": "devdocs",
+     "approxBytes": 385775
+    },
+    {
+     "prefix": "devdocs_en_jquery",
+     "folder": "devdocs",
+     "approxBytes": 1160607
+    },
+    {
+     "prefix": "devdocs_en_jquerymobile",
+     "folder": "devdocs",
+     "approxBytes": 525604
+    },
+    {
+     "prefix": "devdocs_en_jqueryui",
+     "folder": "devdocs",
+     "approxBytes": 462877
+    },
+    {
+     "prefix": "devdocs_en_jsdoc",
+     "folder": "devdocs",
+     "approxBytes": 402765
+    },
+    {
+     "prefix": "devdocs_en_julia",
+     "folder": "devdocs",
+     "approxBytes": 1573339
+    },
+    {
+     "prefix": "devdocs_en_knockout",
+     "folder": "devdocs",
+     "approxBytes": 480902
+    },
+    {
+     "prefix": "devdocs_en_koa",
+     "folder": "devdocs",
+     "approxBytes": 421423
+    },
+    {
+     "prefix": "devdocs_en_kotlin",
+     "folder": "devdocs",
+     "approxBytes": 8213530
+    },
+    {
+     "prefix": "devdocs_en_kubectl",
+     "folder": "devdocs",
+     "approxBytes": 368732
+    },
+    {
+     "prefix": "devdocs_en_kubernetes",
+     "folder": "devdocs",
+     "approxBytes": 617645
+    },
+    {
+     "prefix": "devdocs_en_laravel",
+     "folder": "devdocs",
+     "approxBytes": 3844512
+    },
+    {
+     "prefix": "devdocs_en_latex",
+     "folder": "devdocs",
+     "approxBytes": 784036
+    },
+    {
+     "prefix": "devdocs_en_leaflet",
+     "folder": "devdocs",
+     "approxBytes": 413393
+    },
+    {
+     "prefix": "devdocs_en_less",
+     "folder": "devdocs",
+     "approxBytes": 365953
+    },
+    {
+     "prefix": "devdocs_en_liquid",
+     "folder": "devdocs",
+     "approxBytes": 350494
+    },
+    {
+     "prefix": "devdocs_en_lit",
+     "folder": "devdocs",
+     "approxBytes": 739074
+    },
+    {
+     "prefix": "devdocs_en_lodash",
+     "folder": "devdocs",
+     "approxBytes": 369758
+    },
+    {
+     "prefix": "devdocs_en_love",
+     "folder": "devdocs",
+     "approxBytes": 1552449
+    },
+    {
+     "prefix": "devdocs_en_lua",
+     "folder": "devdocs",
+     "approxBytes": 427881
+    },
+    {
+     "prefix": "devdocs_en_man",
+     "folder": "devdocs",
+     "approxBytes": 29591154
+    },
+    {
+     "prefix": "devdocs_en_mariadb",
+     "folder": "devdocs",
+     "approxBytes": 9768374
+    },
+    {
+     "prefix": "devdocs_en_marionette",
+     "folder": "devdocs",
+     "approxBytes": 406853
+    },
+    {
+     "prefix": "devdocs_en_markdown",
+     "folder": "devdocs",
+     "approxBytes": 333145
+    },
+    {
+     "prefix": "devdocs_en_matplotlib",
+     "folder": "devdocs",
+     "approxBytes": 33432530
+    },
+    {
+     "prefix": "devdocs_en_meteor",
+     "folder": "devdocs",
+     "approxBytes": 1389739
+    },
+    {
+     "prefix": "devdocs_en_minitest",
+     "folder": "devdocs",
+     "approxBytes": 377187
+    },
+    {
+     "prefix": "devdocs_en_mocha",
+     "folder": "devdocs",
+     "approxBytes": 662941
+    },
+    {
+     "prefix": "devdocs_en_modernizr",
+     "folder": "devdocs",
+     "approxBytes": 352164
+    },
+    {
+     "prefix": "devdocs_en_moment",
+     "folder": "devdocs",
+     "approxBytes": 405875
+    },
+    {
+     "prefix": "devdocs_en_moment-timezone",
+     "folder": "devdocs",
+     "approxBytes": 337753
+    },
+    {
+     "prefix": "devdocs_en_mongoose",
+     "folder": "devdocs",
+     "approxBytes": 600003
+    },
+    {
+     "prefix": "devdocs_en_nextjs",
+     "folder": "devdocs",
+     "approxBytes": 1043391
+    },
+    {
+     "prefix": "devdocs_en_nginx",
+     "folder": "devdocs",
+     "approxBytes": 839446
+    },
+    {
+     "prefix": "devdocs_en_nginx-lua-module",
+     "folder": "devdocs",
+     "approxBytes": 598427
+    },
+    {
+     "prefix": "devdocs_en_nim",
+     "folder": "devdocs",
+     "approxBytes": 2103583
+    },
+    {
+     "prefix": "devdocs_en_nix",
+     "folder": "devdocs",
+     "approxBytes": 400603
+    },
+    {
+     "prefix": "devdocs_en_node",
+     "folder": "devdocs",
+     "approxBytes": 1416442
+    },
+    {
+     "prefix": "devdocs_en_nokogiri",
+     "folder": "devdocs",
+     "approxBytes": 483319
+    },
+    {
+     "prefix": "devdocs_en_npm",
+     "folder": "devdocs",
+     "approxBytes": 664082
+    },
+    {
+     "prefix": "devdocs_en_numpy",
+     "folder": "devdocs",
+     "approxBytes": 5248281
+    },
+    {
+     "prefix": "devdocs_en_nushell",
+     "folder": "devdocs",
+     "approxBytes": 865521
+    },
+    {
+     "prefix": "devdocs_en_ocaml",
+     "folder": "devdocs",
+     "approxBytes": 1782980
+    },
+    {
+     "prefix": "devdocs_en_octave",
+     "folder": "devdocs",
+     "approxBytes": 1982767
+    },
+    {
+     "prefix": "devdocs_en_opengl",
+     "folder": "devdocs",
+     "approxBytes": 994306
+    },
+    {
+     "prefix": "devdocs_en_openjdk",
+     "folder": "devdocs",
+     "approxBytes": 15126842
+    },
+    {
+     "prefix": "devdocs_en_openlayers",
+     "folder": "devdocs",
+     "approxBytes": 868633
+    },
+    {
+     "prefix": "devdocs_en_opentsdb",
+     "folder": "devdocs",
+     "approxBytes": 581117
+    },
+    {
+     "prefix": "devdocs_en_padrino",
+     "folder": "devdocs",
+     "approxBytes": 507230
+    },
+    {
+     "prefix": "devdocs_en_pandas",
+     "folder": "devdocs",
+     "approxBytes": 4962130
+    },
+    {
+     "prefix": "devdocs_en_perl",
+     "folder": "devdocs",
+     "approxBytes": 5342025
+    },
+    {
+     "prefix": "devdocs_en_phalcon",
+     "folder": "devdocs",
+     "approxBytes": 1063977
+    },
+    {
+     "prefix": "devdocs_en_phaser",
+     "folder": "devdocs",
+     "approxBytes": 939141
+    },
+    {
+     "prefix": "devdocs_en_phoenix",
+     "folder": "devdocs",
+     "approxBytes": 1187861
+    },
+    {
+     "prefix": "devdocs_en_php",
+     "folder": "devdocs",
+     "approxBytes": 7142041
+    },
+    {
+     "prefix": "devdocs_en_phpunit",
+     "folder": "devdocs",
+     "approxBytes": 489065
+    },
+    {
+     "prefix": "devdocs_en_playwright",
+     "folder": "devdocs",
+     "approxBytes": 877678
+    },
+    {
+     "prefix": "devdocs_en_point-cloud-library",
+     "folder": "devdocs",
+     "approxBytes": 9978257
+    },
+    {
+     "prefix": "devdocs_en_pony",
+     "folder": "devdocs",
+     "approxBytes": 768717
+    },
+    {
+     "prefix": "devdocs_en_postgresql",
+     "folder": "devdocs",
+     "approxBytes": 2611956
+    },
+    {
+     "prefix": "devdocs_en_prettier",
+     "folder": "devdocs",
+     "approxBytes": 449133
+    },
+    {
+     "prefix": "devdocs_en_pug",
+     "folder": "devdocs",
+     "approxBytes": 355422
+    },
+    {
+     "prefix": "devdocs_en_puppeteer",
+     "folder": "devdocs",
+     "approxBytes": 395444
+    },
+    {
+     "prefix": "devdocs_en_pygame",
+     "folder": "devdocs",
+     "approxBytes": 555206
+    },
+    {
+     "prefix": "devdocs_en_python",
+     "folder": "devdocs",
+     "approxBytes": 4390070
+    },
+    {
+     "prefix": "devdocs_en_pytorch",
+     "folder": "devdocs",
+     "approxBytes": 6397099
+    },
+    {
+     "prefix": "devdocs_en_q",
+     "folder": "devdocs",
+     "approxBytes": 336182
+    },
+    {
+     "prefix": "devdocs_en_qt",
+     "folder": "devdocs",
+     "approxBytes": 50057014
+    },
+    {
+     "prefix": "devdocs_en_qunit",
+     "folder": "devdocs",
+     "approxBytes": 450206
+    },
+    {
+     "prefix": "devdocs_en_r",
+     "folder": "devdocs",
+     "approxBytes": 4951825
+    },
+    {
+     "prefix": "devdocs_en_rails",
+     "folder": "devdocs",
+     "approxBytes": 2937631
+    },
+    {
+     "prefix": "devdocs_en_ramda",
+     "folder": "devdocs",
+     "approxBytes": 385672
+    },
+    {
+     "prefix": "devdocs_en_react",
+     "folder": "devdocs",
+     "approxBytes": 2699686
+    },
+    {
+     "prefix": "devdocs_en_react-bootstrap",
+     "folder": "devdocs",
+     "approxBytes": 422014
+    },
+    {
+     "prefix": "devdocs_en_react-native",
+     "folder": "devdocs",
+     "approxBytes": 2146831
+    },
+    {
+     "prefix": "devdocs_en_react-router",
+     "folder": "devdocs",
+     "approxBytes": 496977
+    },
+    {
+     "prefix": "devdocs_en_reactivex",
+     "folder": "devdocs",
+     "approxBytes": 490301
+    },
+    {
+     "prefix": "devdocs_en_redis",
+     "folder": "devdocs",
+     "approxBytes": 871738
+    },
+    {
+     "prefix": "devdocs_en_redux",
+     "folder": "devdocs",
+     "approxBytes": 337932
+    },
+    {
+     "prefix": "devdocs_en_relay",
+     "folder": "devdocs",
+     "approxBytes": 381500
+    },
+    {
+     "prefix": "devdocs_en_requests",
+     "folder": "devdocs",
+     "approxBytes": 355144
+    },
+    {
+     "prefix": "devdocs_en_requirejs",
+     "folder": "devdocs",
+     "approxBytes": 388920
+    },
+    {
+     "prefix": "devdocs_en_rethinkdb",
+     "folder": "devdocs",
+     "approxBytes": 1653663
+    },
+    {
+     "prefix": "devdocs_en_ruby",
+     "folder": "devdocs",
+     "approxBytes": 2123228
+    },
+    {
+     "prefix": "devdocs_en_rust",
+     "folder": "devdocs",
+     "approxBytes": 6229825
+    },
+    {
+     "prefix": "devdocs_en_rxjs",
+     "folder": "devdocs",
+     "approxBytes": 1344314
+    },
+    {
+     "prefix": "devdocs_en_saltstack",
+     "folder": "devdocs",
+     "approxBytes": 3024337
+    },
+    {
+     "prefix": "devdocs_en_sanctuary",
+     "folder": "devdocs",
+     "approxBytes": 356892
+    },
+    {
+     "prefix": "devdocs_en_sanctuary-def",
+     "folder": "devdocs",
+     "approxBytes": 318318
+    },
+    {
+     "prefix": "devdocs_en_sanctuary-type-classes",
+     "folder": "devdocs",
+     "approxBytes": 317149
+    },
+    {
+     "prefix": "devdocs_en_sass",
+     "folder": "devdocs",
+     "approxBytes": 653010
+    },
+    {
+     "prefix": "devdocs_en_scala",
+     "folder": "devdocs",
+     "approxBytes": 1928348
+    },
+    {
+     "prefix": "devdocs_en_scikit-image",
+     "folder": "devdocs",
+     "approxBytes": 11033753
+    },
+    {
+     "prefix": "devdocs_en_scikit-learn",
+     "folder": "devdocs",
+     "approxBytes": 58422873
+    },
+    {
+     "prefix": "devdocs_en_sequelize",
+     "folder": "devdocs",
+     "approxBytes": 532816
+    },
+    {
+     "prefix": "devdocs_en_sinon",
+     "folder": "devdocs",
+     "approxBytes": 361379
+    },
+    {
+     "prefix": "devdocs_en_socketio",
+     "folder": "devdocs",
+     "approxBytes": 1108743
+    },
+    {
+     "prefix": "devdocs_en_spring-boot",
+     "folder": "devdocs",
+     "approxBytes": 832560
+    },
+    {
+     "prefix": "devdocs_en_sqlite",
+     "folder": "devdocs",
+     "approxBytes": 3487091
+    },
+    {
+     "prefix": "devdocs_en_statsmodels",
+     "folder": "devdocs",
+     "approxBytes": 8358329
+    },
+    {
+     "prefix": "devdocs_en_svelte",
+     "folder": "devdocs",
+     "approxBytes": 544002
+    },
+    {
+     "prefix": "devdocs_en_svg",
+     "folder": "devdocs",
+     "approxBytes": 886626
+    },
+    {
+     "prefix": "devdocs_en_symfony",
+     "folder": "devdocs",
+     "approxBytes": 3045153
+    },
+    {
+     "prefix": "devdocs_en_tailwindcss",
+     "folder": "devdocs",
+     "approxBytes": 599565
+    },
+    {
+     "prefix": "devdocs_en_tcl-tk",
+     "folder": "devdocs",
+     "approxBytes": 1330474
+    },
+    {
+     "prefix": "devdocs_en_tcllib",
+     "folder": "devdocs",
+     "approxBytes": 1682084
+    },
+    {
+     "prefix": "devdocs_en_tensorflow",
+     "folder": "devdocs",
+     "approxBytes": 6260226
+    },
+    {
+     "prefix": "devdocs_en_tensorflow-cpp",
+     "folder": "devdocs",
+     "approxBytes": 1492732
+    },
+    {
+     "prefix": "devdocs_en_terraform",
+     "folder": "devdocs",
+     "approxBytes": 31617232
+    },
+    {
+     "prefix": "devdocs_en_threejs",
+     "folder": "devdocs",
+     "approxBytes": 877019
+    },
+    {
+     "prefix": "devdocs_en_trio",
+     "folder": "devdocs",
+     "approxBytes": 488681
+    },
+    {
+     "prefix": "devdocs_en_twig",
+     "folder": "devdocs",
+     "approxBytes": 436863
+    },
+    {
+     "prefix": "devdocs_en_typescript",
+     "folder": "devdocs",
+     "approxBytes": 994227
+    },
+    {
+     "prefix": "devdocs_en_underscore",
+     "folder": "devdocs",
+     "approxBytes": 340648
+    },
+    {
+     "prefix": "devdocs_en_vagrant",
+     "folder": "devdocs",
+     "approxBytes": 553425
+    },
+    {
+     "prefix": "devdocs_en_varnish",
+     "folder": "devdocs",
+     "approxBytes": 651244
+    },
+    {
+     "prefix": "devdocs_en_vertx",
+     "folder": "devdocs",
+     "approxBytes": 1547938
+    },
+    {
+     "prefix": "devdocs_en_vite",
+     "folder": "devdocs",
+     "approxBytes": 524368
+    },
+    {
+     "prefix": "devdocs_en_vitest",
+     "folder": "devdocs",
+     "approxBytes": 916366
+    },
+    {
+     "prefix": "devdocs_en_vue",
+     "folder": "devdocs",
+     "approxBytes": 975797
+    },
+    {
+     "prefix": "devdocs_en_vue-router",
+     "folder": "devdocs",
+     "approxBytes": 524042
+    },
+    {
+     "prefix": "devdocs_en_vueuse",
+     "folder": "devdocs",
+     "approxBytes": 741096
+    },
+    {
+     "prefix": "devdocs_en_vuex",
+     "folder": "devdocs",
+     "approxBytes": 381333
+    },
+    {
+     "prefix": "devdocs_en_vulkan",
+     "folder": "devdocs",
+     "approxBytes": 545933
+    },
+    {
+     "prefix": "devdocs_en_wagtail",
+     "folder": "devdocs",
+     "approxBytes": 1323709
+    },
+    {
+     "prefix": "devdocs_en_web-extensions",
+     "folder": "devdocs",
+     "approxBytes": 4192289
+    },
+    {
+     "prefix": "devdocs_en_webpack",
+     "folder": "devdocs",
+     "approxBytes": 786937
+    },
+    {
+     "prefix": "devdocs_en_werkzeug",
+     "folder": "devdocs",
+     "approxBytes": 502192
+    },
+    {
+     "prefix": "devdocs_en_wordpress",
+     "folder": "devdocs",
+     "approxBytes": 14437005
+    },
+    {
+     "prefix": "devdocs_en_xslt-xpath",
+     "folder": "devdocs",
+     "approxBytes": 427861
+    },
+    {
+     "prefix": "devdocs_en_yarn",
+     "folder": "devdocs",
+     "approxBytes": 607907
+    },
+    {
+     "prefix": "devdocs_en_yii",
+     "folder": "devdocs",
+     "approxBytes": 2123941
+    },
+    {
+     "prefix": "devdocs_en_zig",
+     "folder": "devdocs",
+     "approxBytes": 490797
+    },
+    {
+     "prefix": "devdocs_en_zsh",
+     "folder": "devdocs",
+     "approxBytes": 781583
+    },
+    {
+     "prefix": "docs.python.org_en_all",
+     "folder": "zimit",
+     "approxBytes": 3959218562
+    },
+    {
+     "prefix": "freecodecamp_en_all",
+     "folder": "freecodecamp",
+     "approxBytes": 7892996
+    },
+    {
+     "prefix": "freecodecamp_es_all",
+     "folder": "freecodecamp",
+     "approxBytes": 7848168
+    },
+    {
+     "prefix": "peps.python_en_all",
+     "folder": "zimit",
+     "approxBytes": 9095163
+    },
+    {
+     "prefix": "php.net_en_all",
+     "folder": "zimit",
+     "approxBytes": 32847118
+    }
+   ]
+  },
+  {
+   "id": "wiki_es",
+   "title": "Wikipedia en español",
+   "desc": "La enciclopedia completa en español, sin imágenes, y Wikilibros en español.",
+   "tag": "general",
+   "approxBytes": 12379746925,
+   "items": [
+    {
+     "prefix": "wikibooks_es_all_nopic",
+     "folder": "wikibooks",
+     "approxBytes": 112043538
+    },
+    {
+     "prefix": "wikipedia_es_all_nopic",
+     "folder": "wikipedia",
+     "approxBytes": 12267703387
+    }
+   ]
+  },
+  {
+   "id": "books",
+   "title": "Libros y filosofía",
+   "desc": "Libros de dominio público en español (Gutenberg), Filosofía SE y la Enciclopedia de Filosofía.",
+   "tag": "general",
+   "approxBytes": 2197579913,
+   "items": [
+    {
+     "prefix": "gutenberg_es_all",
+     "folder": "gutenberg",
+     "approxBytes": 1860106016
+    },
+    {
+     "prefix": "internet-encyclopedia-philosophy_en_all",
+     "folder": "zimit",
+     "approxBytes": 125830977
+    },
+    {
+     "prefix": "philosophy.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 211642920
+    }
+   ]
+  },
+  {
+   "id": "eng",
+   "title": "Electrónica, mecánica y reparación",
+   "desc": "Electrónica, ingeniería, robótica, mecánica automotriz y guías de iFixit.",
+   "tag": "tech",
+   "approxBytes": 13003453633,
+   "items": [
+    {
+     "prefix": "3dprinting.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 120138274
+    },
+    {
+     "prefix": "arduino.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 259175193
+    },
+    {
+     "prefix": "electronics.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 4214186044
+    },
+    {
+     "prefix": "engineering.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 255770156
+    },
+    {
+     "prefix": "ifixit_en_all",
+     "folder": "ifixit",
+     "approxBytes": 3570695757
+    },
+    {
+     "prefix": "ifixit_es_all",
+     "folder": "ifixit",
+     "approxBytes": 3680870250
+    },
+    {
+     "prefix": "iot.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 20597410
+    },
+    {
+     "prefix": "mechanics.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 339833641
+    },
+    {
+     "prefix": "raspberrypi.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 298462727
+    },
+    {
+     "prefix": "robotics.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 243724181
+    }
+   ]
+  },
+  {
+   "id": "sci",
+   "title": "Ciencia y matemáticas",
+   "desc": "Matemáticas, física, química, biología, estadística y libros de texto de LibreTexts.",
+   "tag": "science",
+   "approxBytes": 31711116151,
+   "items": [
+    {
+     "prefix": "astronomy.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 195955996
+    },
+    {
+     "prefix": "biology.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 422849825
+    },
+    {
+     "prefix": "chemistry.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 417260049
+    },
+    {
+     "prefix": "libretexts.org_en_bio",
+     "folder": "libretexts",
+     "approxBytes": 2240946728
+    },
+    {
+     "prefix": "libretexts.org_en_biz",
+     "folder": "libretexts",
+     "approxBytes": 839753856
+    },
+    {
+     "prefix": "libretexts.org_en_chem",
+     "folder": "libretexts",
+     "approxBytes": 2182916266
+    },
+    {
+     "prefix": "libretexts.org_en_eng",
+     "folder": "libretexts",
+     "approxBytes": 678394631
+    },
+    {
+     "prefix": "libretexts.org_en_geo",
+     "folder": "libretexts",
+     "approxBytes": 1188116861
+    },
+    {
+     "prefix": "libretexts.org_en_human",
+     "folder": "libretexts",
+     "approxBytes": 4433682987
+    },
+    {
+     "prefix": "libretexts.org_en_k12",
+     "folder": "libretexts",
+     "approxBytes": 369809249
+    },
+    {
+     "prefix": "libretexts.org_en_math",
+     "folder": "libretexts",
+     "approxBytes": 830646230
+    },
+    {
+     "prefix": "libretexts.org_en_med",
+     "folder": "libretexts",
+     "approxBytes": 1192567339
+    },
+    {
+     "prefix": "libretexts.org_en_phys",
+     "folder": "libretexts",
+     "approxBytes": 559554453
+    },
+    {
+     "prefix": "libretexts.org_en_socialsci",
+     "folder": "libretexts",
+     "approxBytes": 2046178905
+    },
+    {
+     "prefix": "libretexts.org_en_stats",
+     "folder": "libretexts",
+     "approxBytes": 215779148
+    },
+    {
+     "prefix": "libretexts.org_en_workforce",
+     "folder": "libretexts",
+     "approxBytes": 513663835
+    },
+    {
+     "prefix": "math.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 7417271999
+    },
+    {
+     "prefix": "matheducators.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 57901645
+    },
+    {
+     "prefix": "mathematica.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1597226286
+    },
+    {
+     "prefix": "mathoverflow.net_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 848484330
+    },
+    {
+     "prefix": "physics.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1827690763
+    },
+    {
+     "prefix": "stats.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1634464770
+    }
+   ]
+  },
+  {
+   "id": "dev_qa",
+   "title": "Preguntas y respuestas técnicas",
+   "desc": "Stack Exchange técnico: Linux, redes, bases de datos, seguridad, desarrollo de juegos, Unix, TeX…",
+   "tag": "dev",
+   "approxBytes": 33460854844,
+   "items": [
+    {
+     "prefix": "ai.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 104587259
+    },
+    {
+     "prefix": "android.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 411444566
+    },
+    {
+     "prefix": "apple.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1193034241
+    },
+    {
+     "prefix": "askubuntu.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 2767308034
+    },
+    {
+     "prefix": "blender.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 2837101616
+    },
+    {
+     "prefix": "codegolf.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 392547706
+    },
+    {
+     "prefix": "codereview.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 551497987
+    },
+    {
+     "prefix": "computergraphics.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 53077459
+    },
+    {
+     "prefix": "crypto.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 184916073
+    },
+    {
+     "prefix": "cs.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 276371748
+    },
+    {
+     "prefix": "cstheory.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 74275249
+    },
+    {
+     "prefix": "datascience.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 272756585
+    },
+    {
+     "prefix": "dba.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 700759384
+    },
+    {
+     "prefix": "drupal.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 428107548
+    },
+    {
+     "prefix": "emacs.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 151902103
+    },
+    {
+     "prefix": "es.stackoverflow.com_mul_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1430257791
+    },
+    {
+     "prefix": "ethereum.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 280908524
+    },
+    {
+     "prefix": "gamedev.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 532395857
+    },
+    {
+     "prefix": "hardwarerecs.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 41873068
+    },
+    {
+     "prefix": "ja.stackoverflow.com_mul_all",
+     "folder": "stack_exchange",
+     "approxBytes": 236789540
+    },
+    {
+     "prefix": "magento.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 624975538
+    },
+    {
+     "prefix": "networkengineering.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 129967953
+    },
+    {
+     "prefix": "opensource.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 30509902
+    },
+    {
+     "prefix": "pt.stackoverflow.com_mul_all",
+     "folder": "stack_exchange",
+     "approxBytes": 934140922
+    },
+    {
+     "prefix": "quantumcomputing.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 99229059
+    },
+    {
+     "prefix": "retrocomputing.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 123951836
+    },
+    {
+     "prefix": "reverseengineering.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 114984420
+    },
+    {
+     "prefix": "ru.stackoverflow.com_mul_all",
+     "folder": "stack_exchange",
+     "approxBytes": 2694560806
+    },
+    {
+     "prefix": "salesforce.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 762820368
+    },
+    {
+     "prefix": "security.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 439160380
+    },
+    {
+     "prefix": "serverfault.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1639953058
+    },
+    {
+     "prefix": "sharepoint.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 624745163
+    },
+    {
+     "prefix": "softwareengineering.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 479114302
+    },
+    {
+     "prefix": "softwarerecs.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 222080085
+    },
+    {
+     "prefix": "sqa.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 87734211
+    },
+    {
+     "prefix": "superuser.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 4003118644
+    },
+    {
+     "prefix": "tex.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 4535082593
+    },
+    {
+     "prefix": "unix.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 1312634563
+    },
+    {
+     "prefix": "ux.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 545966837
+    },
+    {
+     "prefix": "vi.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 90292493
+    },
+    {
+     "prefix": "webapps.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 288812212
+    },
+    {
+     "prefix": "webmasters.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 226672694
+    },
+    {
+     "prefix": "wordpress.stackexchange.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 528434467
+    }
+   ]
+  },
+  {
+   "id": "dev_extra",
+   "title": "Hojas de referencia y wikis de Linux",
+   "desc": "Cheatography (miles de hojas de referencia), Arch Wiki y Gentoo Wiki.",
+   "tag": "dev",
+   "approxBytes": 11571429014,
+   "items": [
+    {
+     "prefix": "archlinux_en_all_maxi",
+     "folder": "other",
+     "approxBytes": 35601208
+    },
+    {
+     "prefix": "cheatography.com_en_all",
+     "folder": "zimit",
+     "approxBytes": 11439513214
+    },
+    {
+     "prefix": "gentoo_en_all_maxi",
+     "folder": "other",
+     "approxBytes": 96314592
+    }
+   ]
+  },
+  {
+   "id": "wiki_en",
+   "title": "Wikipedia en inglés",
+   "desc": "La enciclopedia completa en inglés, sin imágenes, y Wikilibros en inglés. Muy grande.",
+   "tag": "general",
+   "approxBytes": 56198600171,
+   "items": [
+    {
+     "prefix": "wikibooks_en_all_nopic",
+     "folder": "wikibooks",
+     "approxBytes": 3507893616
+    },
+    {
+     "prefix": "wikipedia_en_all_nopic",
+     "folder": "wikipedia",
+     "approxBytes": 52690706555
+    }
+   ]
+  },
+  {
+   "id": "so_full",
+   "title": "Stack Overflow completo (inglés)",
+   "tag": "dev",
+   "huge": true,
+   "desc": "Todas las preguntas y respuestas de Stack Overflow. Enorme: solo si tienes mucho espacio libre.",
+   "approxBytes": 114890375168,
+   "items": [
+    {
+     "prefix": "stackoverflow.com_en_all",
+     "folder": "stack_exchange",
+     "approxBytes": 114890375168
+    }
+   ]
+  }
+ ],
+ "catalogId": "cpb-513b13c2-2223e1f0",
+ "_v": "UTsTwj8kbbPNf6YcDzNf1ozvU2oZfHrrErb7G7EZt5o="
+}
