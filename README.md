@@ -95,8 +95,9 @@ verificar una descarga: **[CODE_SIGNING_POLICY.md](CODE_SIGNING_POLICY.md)** · 
 CapiChad es gratuito y se desarrolla en tiempo libre. Si te es útil y quieres ayudar a que siga creciendo (más pruebas,
 más modelos, soporte para más equipos), puedes donar:
 
-<!-- PUBLICAR: reemplaza esta línea con tu enlace real (Ko-fi, GitHub Sponsors, Buy Me a Coffee, PayPal.me, Liberapay…) -->
-**➡ Enlace de donaciones: _próximamente_**
+**➡ [Apoya CapiChad en Ko-fi: ko-fi.com/capichad](https://ko-fi.com/capichad)**
+
+También puedes hacerlo desde la propia app (*Ajustes → Avanzado → Apoyar el proyecto*) o con el botón **Sponsor** de este repositorio.
 
 También ayudas reportando errores, compartiendo el proyecto o contribuyendo código y traducciones.
 

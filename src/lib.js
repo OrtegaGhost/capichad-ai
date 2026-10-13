@@ -39,6 +39,7 @@ const ICONS = {
   copy: '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/>',
   chat: '<path d="M4 5h16v11H9l-5 4z"/>',
   stop: '<rect x="6" y="6" width="12" height="12" rx="2"/>',
+  heart: '<path d="M12 20.5s-7.5-4.6-9.2-9.2C1.6 7.8 3.6 4.5 7 4.5c2 0 3.8 1.2 5 3 1.2-1.8 3-3 5-3 3.4 0 5.4 3.3 4.2 6.8-1.7 4.6-9.2 9.2-9.2 9.2z"/>',
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
   list: '<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',
   book: '<path d="M4 4h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v14h-6a3 3 0 0 0-2 1 3 3 0 0 0-2-1H4z"/><path d="M12 5v14"/>',

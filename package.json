@@ -1,7 +1,7 @@
 {
   "name": "capichad",
   "productName": "CapiChad",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "IA local sin internet - Capibara Software",
   "author": {
     "name": "Capibara Software (OrtegaGhost)",
@@ -86,6 +86,7 @@
   "copyright": "(c) 2026 Capibara Software (OrtegaGhost). AGPL-3.0-or-later.",
   "capibara": {
     "origin": "https://github.com/OrtegaGhost/capichad-ai",
+    "donate": "https://ko-fi.com/capichad",
     "fp": "UTsTwj8kbbPNf6YcDzNf1ozvU2oZfHrrErb7G7EZt5o="
   }
 }

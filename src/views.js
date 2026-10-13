@@ -361,7 +361,7 @@ VIEWS['assistant-edit'] = async (main, id) => {
 
 // ---------- ajustes ----------
 VIEWS.settings = async (main, tab = 'general') => {
-  const v = h('div', { class: 'view' }); S.sys = await invoke('sys:info'); S.modelsDir = await invoke('models:dir');
+  const v = h('div', { class: 'view' }); S.sys = await invoke('sys:info'); S.modelsDir = await invoke('models:dir'); const donate = await invoke('app:donate').catch(() => '');
   const set = async (p, redraw) => { S.cfg = await invoke('cfg:set', p); applyAppearance(); if (redraw) go('settings', tab); };
   const row = (ic, t, d, ...ctrl) => h('div', { class: 'card setrow' }, h('div', { class: 'l' }, h('span', { class: 'ic', html: icon(ic) }), h('div', {}, h('b', {}, t), h('span', {}, d))), h('div', { class: 'r' }, ...ctrl));
   const line = (label, ctrl, sub) => h('div', { class: 'line' }, h('div', {}, h('div', {}, label), sub ? h('small', { class: 'muted' }, sub) : null), ctrl);
@@ -397,6 +397,8 @@ VIEWS.settings = async (main, tab = 'general') => {
         line('Dirección', h('input', { type: 'text', style: 'width:260px', placeholder: '127.0.0.1:11434 (este equipo)', value: S.cfg.ollamaHost || '',
           onchange: async e => { S.cfg = await invoke('cfg:set', { ollamaHost: e.target.value.trim() }); toast(e.target.value.trim() ? 'Se usará el servidor ' + e.target.value.trim() + '. Reinicia la app si algo no responde.' : 'Se usará Ollama en este equipo.'); } }),
           'Déjalo vacío para usar el Ollama de este equipo. Debe aceptar conexiones de la red (OLLAMA_HOST=0.0.0.0).')),
+      ...(donate ? [row('heart', 'Apoyar el proyecto', 'CapiChad es gratis y de código abierto. Si te sirve, puedes ayudar a que siga creciendo.',
+        h('button', { class: 'btn', onclick: () => invoke('app:openDonate') }, h('span', { html: icon('heart') }), 'Apoyar'))] : []),
       row('info', 'Acerca de', 'CapiChad · Capibara Software · AGPL-3.0-or-later', h('div', { class: 'muted' },
         `Versión ${S.sys.version} · ${S.sys.cpu}${S.sys.platform ? ' · ' + S.sys.platform.arch + ' ' + S.sys.platform.osBits + ' bits' : ''}`),
         h('div', { class: 'muted', style: 'margin-top:4px' }, 'Creado por Capibara Software (OrtegaGhost), 2026. Código abierto bajo AGPL-3.0: si lo redistribuyes o lo ofreces como servicio, debes conservar estos avisos de autoría y publicar tu código fuente.')) ]

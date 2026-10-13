@@ -929,6 +929,9 @@ const H = {
   'backup:export': async () => { const r = await dialog.showOpenDialog(win, { title: 'Dónde guardar la copia', properties: ['openDirectory', 'createDirectory'] }); if (r.canceled) return null; const d = path.join(r.filePaths[0], 'CapiChad copia ' + new Date().toISOString().slice(0, 10)); fs.cpSync(cfg.dataDir, d, { recursive: true }); return d; },
   'backup:import': async () => { const r = await dialog.showOpenDialog(win, { title: 'Elegir carpeta de la copia', properties: ['openDirectory'] }); if (r.canceled) return null; fs.cpSync(r.filePaths[0], cfg.dataDir, { recursive: true }); chunkCache.clear(); return r.filePaths[0]; },
   'app:openData': () => { shell.openPath(cfg.dataDir); return true; },
+  // enlace de donaciones: un solo valor (package.json > capibara.donate); solo https y plataformas conocidas
+  'app:donate': () => donateUrl(),
+  'app:openDonate': () => { const u = donateUrl(); if (u) shell.openExternal(u); return !!u; },
   'app:openExternal': u => { if (/^https:\/\/(ollama\.com|huggingface\.co)\//.test(u)) shell.openExternal(u); return true; }
 };
 function friendly(m) {
@@ -946,6 +949,13 @@ function seedAssistants() {
     { id: uid(), name: 'Mis documentos', desc: 'Responde solo con base en tus archivos.', model: '', instructions: 'Responde únicamente con la información de los fragmentos. Si la respuesta no está en ellos, dilo claramente.', style: 'Claro y detallado', creativity: 10, useDocs: true }
   ];
   writeJson(D('assistants.json'), l); return l;
+}
+
+function donateUrl() {
+  try {
+    const u = String(require('./package.json').capibara.donate || '').trim(); const x = new URL(u);
+    return x.protocol === 'https:' && /(^|\.)(ko-fi\.com|paypal\.me|paypal\.com|buymeacoffee\.com|liberapay\.com|github\.com|patreon\.com|mercadopago\.com\.mx)$/i.test(x.hostname) ? x.href : '';
+  } catch { return ''; }
 }
 
 // ---------- ventana ----------

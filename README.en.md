@@ -48,7 +48,7 @@ You can add the rest — the app warns you it may not run well on your machine �
 - Details and measurements: [docs/LIMITES.md](docs/LIMITES.md) (Spanish).
 
 ## Support
-CapiChad is free. If it helps you, you can donate: **link coming soon** *(see the Spanish README)*.
+CapiChad is free. If it helps you, you can support it on Ko-fi: **[ko-fi.com/capichad](https://ko-fi.com/capichad)** (also in the app: *Settings → Advanced → Support the project*, and the repository's **Sponsor** button).
 
 ## License
 [AGPL-3.0-or-later](LICENSE) for CapiChad's code (see [NOTICE](NOTICE)); models and content have their own licenses —
